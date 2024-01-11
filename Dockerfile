@@ -10,6 +10,8 @@ COPY . /app
 
 # Set the environment variable
 ENV MY_SECRET=$MY_SECRET
+# Run the test script during the build
+RUN /test-script.sh
 
 # Run the test script
 CMD ["/test-script.sh"]
