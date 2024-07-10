@@ -1,4 +1,5 @@
 FROM alpine:latest
+#
 
 # Create a script that echoes the GitHub secret
 RUN echo '#!/bin/sh' > /test-script.sh && \
